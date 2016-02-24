@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.servicesapp.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="58dp"
+        android:onClick="handleServices"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/buttonBind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonStart"
+        android:layout_alignBottom="@+id/buttonStart"
+        android:layout_centerHorizontal="true"
+        android:onClick="handleServices"
+        android:text="Bind" />
+
+    <Button
+        android:id="@+id/buttonUnbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonBind"
+        android:layout_below="@+id/buttonBind"
+        android:layout_marginTop="21dp"
+        android:onClick="handleServices"
+        android:text="Unbind" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonUnbind"
+        android:layout_alignBottom="@+id/buttonUnbind"
+        android:layout_alignLeft="@+id/buttonStart"
+        android:onClick="handleServices"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/buttonIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonUnbind"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:onClick="handleServices"
+        android:text="Intent" />
+
+    <TextView
+        android:id="@+id/textViewService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonIntent"
+        android:layout_alignBottom="@+id/buttonIntent"
+        android:layout_toRightOf="@+id/buttonBind"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
